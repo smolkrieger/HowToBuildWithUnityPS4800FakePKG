@@ -4,24 +4,22 @@ A slightly modified version of the original guide. For the most part, follow alo
 Setup
 =====
 
-1.- Install PS4 S*D*K. There is a release out there you have to look for.
+1.- Install PS4 S*D*K. There are a lot of versions, look for 8.008.
 
-2.- Install Unity 2021.2.0b11. ( You have to look for the version capable to build for 8.00 PS4 release ).
+2.- Install Unity 2021.2.0b11.
 
 3.- Install Unity PS4 2021.2.0b11 for the same release as Unity 2021 release.
 
 4.- You can also install Monodevelop from the preferences menu option within Unity Editor. You can, anyway, install Visual Studio as IDE.
 
-5.- Use "UniHacker" to patch the Unity Hub and Unity installation after installing or PS4 target won't appear in Build Settings.
+5.- Use unihacker to patch the Unity Hub and Unity installation after installing or PS4 target won't appear in Build Settings.
 
-Note: In the original guide, you'd have to replace the "Publishing Tools" in the S*D*K. However, I decided to change this a bit. After figuring out that trying to build it without this, it won't launch on my jailbroken PS4. So, instead, try these steps (don't install the PKG from the Releases, it won't work as it was uploaded before I could even test it):
-
-6.- Download the FPKG tools here: "https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87/releases" (7.0 at time of writing) and copy/replace it in "SCE_PATH/ORBIS/Tools/Publishing Tools/bin"
+6.- Download Fake PKG tools here: "https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87/releases" (7.0 at time of writing) and copy/replace it in "SCE_PATH/ORBIS/Tools/Publishing Tools/bin"
 
 Building
 ========
 
-1.- Create a new project, or open an existing one, or just import one of the packages as samples you can also find out there.
+1.- Create a new project, or open an existing one.
 
 2.- When you're ready to build the project select File -> Build Settings.
 
@@ -58,7 +56,7 @@ But we still need the shareparam.json file - in later S*D*K versions (or at leas
 
 ![Publishing Tools](https://github.com/gamecoreSRC/HowToBuildWithUnityPS4800FakePKG/blob/master/image_2025-08-09_015015867.png "Publishing Tools")
 
-11.- Open "Share_File_Editor.exe" you should see this window open up. You don't need to change any of the settings here (at least, not to my knowledge).
+11.- Open "Share_File_Editor.exe" you should see this window open up. You don't need to change any of the settings here.
 
 ![Publishing Settings](https://github.com/gamecoreSRC/HowToBuildWithUnityPS4800FakePKG/blob/master/image_2025-08-09_015148470.png "Publishing Tools")
 
@@ -85,7 +83,3 @@ But we still need the shareparam.json file - in later S*D*K versions (or at leas
 17.- Set parental control to 1 in Publishing Settings. If you keep in value 11 which is default you will get an error about invalid parental control number.
 
 18.- Now you can click Build, and you can do more builds without repeating all the steps shown here. You have to do this only once for the project. Remember you empty the folder Build before you try to compile again, because Unity requires build folder be empty if you are going to create a different Build Type, which is the case. We changed Build Type from PC Hosted to PS4 Package. After that you can build more times without clean folder while you create always PS4 Packages.
-
-
-![License](https://img.shields.io/badge/License-GPLv2-blue.svg)
-[![Chat on Discord](https://camo.githubusercontent.com/b4175720ede4f2621aa066ffbabb70ae30044679/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d446973636f72642d627269676874677265656e2e737667)](https://discordapp.com/invite/cUnjkPH)
